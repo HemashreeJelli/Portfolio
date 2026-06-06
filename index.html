@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemashree Jelli // AI/ML & Full-Stack Engineer Portfolio</title>
+  <meta name="description" content="Minimalist, highly interactive portfolio for Hemashree Jelli, AI/ML Research Intern and B.Tech CSE (Bioinformatics) student at VIT, featuring citation-aware RAG systems, resume tracking engines, and interactive ordered dither backdrops.">
+  
+  <!-- Premium Google Fonts: Serif for elegant headlines, Monospace for static labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Share+Tech+Mono&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23121324'/><text x='50%' y='65%' font-family='monospace' font-weight='bold' font-size='55' fill='%23a2a7f5' text-anchor='middle'>HJ</text></svg>">
+  <link rel="stylesheet" href="styles.css?v=58.0">
+</head>
+<body>
+
+  <!-- Dither Checkerboard Screen Overlay -->
+  <div class="dither-overlay"></div>
+
+  <!-- Full-Screen Interactive Ordered Dither Waves Canvas Backdrop -->
+  <canvas id="dither-canvas"></canvas>
+
+  <!-- Minimalist Loading Page -->
+  <div id="loader-screen">
+    <div class="loader-container">
+      <h1 class="loader-name">Hemashree Jelli</h1>
+      <div class="loader-progress-box">
+        <div class="loader-track">
+          <div class="loader-fill" id="loader-progress"></div>
+        </div>
+        <div class="loader-percentage" id="loader-percentage">00%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Website Container -->
+  <div id="app-wrapper" class="hidden-element">
+    
+    <!-- Minimalist Top Header with Restored Controls -->
+    <header class="system-header">
+      <div class="logo-area">
+        <span class="logo-text">HEMASHREE JELLI</span>
+      </div>
+      <nav class="system-nav">
+        <a href="#hero" class="nav-item active-nav" data-tab="hero">Home</a>
+        <a href="#projects" class="nav-item" data-tab="projects">Projects</a>
+        <a href="#contact" class="nav-item" data-tab="contact">Contact</a>
+      </nav>
+      <div class="header-section system-controls">
+        <button id="audio-toggle" class="control-btn fill-btn" title="Toggle audio clicks">
+          <span class="audio-icon">🔊</span> <span class="audio-label">ACTIVE</span>
+        </button>
+        <div class="theme-picker">
+          <span class="theme-indicator">THEME:</span>
+          <select id="matrix-theme-selector" class="theme-select">
+            <option value="lavender">LAVENDER DITHER</option>
+            <option value="amber">CYBER AMBER</option>
+            <option value="matrix">NEON MATRIX</option>
+            <option value="silver">SILVER MONO</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace Screen -->
+    <main class="system-workspace">
+      
+      <!-- HERO MODULE PANEL -->
+      <section id="hero" class="workspace-section active-section">
+        <div class="panel-layout hero-grid">
+          
+          <div class="panel-column info-card">
+            <h2 class="serif-title main-name">Hemashree <span class="highlight-text">Jelli</span></h2>
+            
+            
+            <p class="section-para lead-text">
+              Developing end-to-end AI applications that combine retrieval, reasoning, and generation. Focused on RAG architectures, document intelligence, and multimodal machine learning systems, with experience taking projects from prototyping to scalable deployment.
+            </p>
+ 
+            <div class="specs-mini-table">
+              <div class="specs-row"><span class="spec-lbl">FOCUS</span><span class="spec-val">AI Engineering, Full-Stack Development & Applied ML</span></div>
+              <div class="specs-row"><span class="spec-lbl">SPECIALTY</span><span class="spec-val">RAG Systems, AI Agents & Multimodal Applications</span></div>
+              <div class="specs-row"><span class="spec-lbl">TECH STACK</span><span class="spec-val highlight-text">React, FastAPI, Supabase, LangChain, LangGraph, PyTorch</span></div>
+            </div>
+ 
+            <div class="action-buttons">
+              <button class="sys-btn fill-btn nav-trigger" data-target="projects">View Projects</button>
+              <button class="sys-btn outline-btn nav-trigger" data-target="contact">Get In Touch</button>
+            </div>
+          </div>
+
+          <div class="panel-column skills-card">
+            <h2 class="serif-title small-serif">Skills & Credentials</h2>
+            
+            <div class="skills-resume-block font-mono" style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 28px; font-size: 0.8rem; line-height: 1.6;">
+              <div><span class="highlight-text">> LANGUAGES:</span> <span style="color: var(--text-color);">Java, Python, C/C++, SQL (PostgreSQL), JavaScript, R</span></div>
+              <div><span class="highlight-text">> FRAMEWORKS:</span> <span style="color: var(--text-color);">React, FastAPI, Express.js, Node.js, Streamlit, LangChain, LangGraph</span></div>
+              <div><span class="highlight-text">> TOOLS & TECH:</span> <span style="color: var(--text-color);">Git, AWS, Microsoft Azure, Supabase, VS Code, Visual Studio, MongoDB</span></div>
+              <div><span class="highlight-text">> LIBRARIES:</span> <span style="color: var(--text-color);">PyTorch, NumPy, pandas, Scikit-learn</span></div>
+              <div><span class="highlight-text">> DESIGN TOOLS:</span> <span style="color: var(--text-color);">Figma, Canva</span></div>
+            </div>
+
+            <div class="certifications-container" style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+              <h3 class="mono-text" style="font-size: 0.82rem; letter-spacing: 1px; color: var(--accent-color); margin-bottom: 14px;">✦ DECLARED CREDENTIALS & ACHIEVEMENTS</h3>
+              <ul class="mono-text" style="font-size: 0.76rem; color: var(--text-muted); list-style: none; display: flex; flex-direction: column; gap: 10px; line-height: 1.45;">
+                <li><span class="highlight-text">[AI-102]</span> Microsoft Azure AI Engineer Associate (2025)</li>
+                <li><span class="highlight-text">[AZ-900]</span> Microsoft Azure Fundamentals (2025)</li>
+                <li><span class="highlight-text">[GSSOC'26]</span> Open-Source Software Contributor</li>
+                <li><span class="highlight-text">[SIH'25]</span> Smart India Hackathon Top 100 Shortlist</li>
+                <li><span class="highlight-text">[VIT Top 10]</span> Ranked in Top 10 B.Tech CSE (Bioinformatics)</li>
+              </ul>
+            </div>
+          </div>
+ 
+        </div>
+      </section>
+
+
+
+      <!-- PROJECTS PANEL -->
+      <section id="projects" class="workspace-section">
+        <div class="projects-layout">
+          <h2 class="serif-title small-serif">Projects</h2>
+          <div class="projects-deck">
+            
+            <!-- Project 1 -->
+            <div class="project-card" data-project="0">
+              <h3 class="proj-title">SMART RESEARCH WORKSPACE</h3>
+              <p class="proj-desc">A high-performance, citation-aware RAG platform for document QA, built with FastAPI, React, ChromaDB, Cross-Encoder reranking, and Llama-3.3 query rewriting.</p>
+              <div class="proj-tags">
+                <span>FastAPI</span>
+                <span>React</span>
+                <span>ChromaDB</span>
+                <span>RAG / LLMs</span>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-project="1">
+              <h3 class="proj-title">RAPT: RESUME ANALYSIS PLATFORM</h3>
+              <p class="proj-desc">An AI-powered recruitment engine bridging the gap between job descriptions and resumes using GTE semantic embeddings, pgvector, and edge functions.</p>
+              <div class="proj-tags">
+                <span>React</span>
+                <span>FastAPI</span>
+                <span>Supabase</span>
+                <span>GTE / pgvector</span>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-project="2">
+              <h3 class="proj-title">CRIME ANALYTICS & FIR MANAGEMENT SYSTEM</h3>
+              <p class="proj-desc">A modular crime analytics system simulating First Information Report (FIR) workflows using an Oracle backend, Scikit-Learn pipelines, and Streamlit.</p>
+              <div class="proj-tags">
+                <span>Streamlit</span>
+                <span>Oracle DB</span>
+                <span>Scikit-Learn</span>
+                <span>ML Pipeline</span>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-project="3">
+              <h3 class="proj-title">SEMANTIC SEARCH SYSTEM</h3>
+              <p class="proj-desc">A high-performance semantic search engine built on the 20 Newsgroups dataset, featuring sentence embeddings, fuzzy GMM clustering, FAISS vector indexing, and cluster-aware caching.</p>
+              <div class="proj-tags">
+                <span>FastAPI</span>
+                <span>FAISS</span>
+                <span>SentenceTransformers</span>
+                <span>Docker</span>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-project="4">
+              <h3 class="proj-title">AI DONATION PLATFORM</h3>
+              <p class="proj-desc">A habit-forming micro-donation platform leveraging AI recommendations, gamification mechanics (streaks, leaderboards), and sponsor-backed incentives.</p>
+              <div class="proj-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>OpenAI / AI Agents</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Restored Interactive Project HUD Details Inspector -->
+          <div id="project-inspector" class="inspector-panel hidden-element">
+            <div class="inspector-header">
+              <span class="inspector-title">PROJECT DEEP DIVE</span>
+              <button id="close-inspector-btn" class="inspector-close">×</button>
+            </div>
+            <div class="inspector-body">
+              <div class="inspector-canvas-wrapper">
+                <canvas id="inspector-canvas"></canvas>
+                <img id="inspector-image" src="" alt="Project Screenshot" class="hidden-element">
+              </div>
+              <div class="inspector-info">
+                <div class="inspector-row"><span>TECH STACK:</span><span id="inspect-tech" class="highlight-text">--</span></div>
+                <div class="inspector-row"><span>KEY OUTCOME / IMPACT:</span><span id="inspect-impact" class="highlight-text">--</span></div>
+                <p id="inspect-full-desc">Click any package above to compile dynamic visual graphics and read project files.</p>
+                <div class="inspector-controls">
+                  <a href="#" id="inspect-source-link" target="_blank" class="sys-btn outline-btn font-mono">SOURCE_CODE.TXT</a>
+                  <a href="#" id="inspect-live-link" target="_blank" class="sys-btn fill-btn font-mono">LAUNCH_LIVE.SH</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT & BASH COMMAND PROMPT SHELL PANEL -->
+      <section id="contact" class="workspace-section">
+        <div class="panel-layout contact-grid">
+          
+          <div class="panel-column border-right input-form-panel">
+            <h2 class="serif-title small-serif">Say Hello</h2>
+            
+            <form id="contact-form" name="contact" netlify class="retro-form">
+              <input type="hidden" name="form-name" value="contact">
+              <div class="form-row">
+                <label for="user-name" class="form-label">> Name:</label>
+                <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Hemashree Jelli" required autocomplete="off">
+              </div>
+              
+              <div class="form-row">
+                <label for="user-email" class="form-label">> Email:</label>
+                <input type="email" id="user-email" name="email" class="form-input" placeholder="e.g. hello@domain.com" required autocomplete="off">
+              </div>
+
+              <div class="form-row">
+                <label for="user-msg" class="form-label">> Message:</label>
+                <textarea id="user-msg" name="message" class="form-textarea" placeholder="Type your message here..." required></textarea>
+              </div>
+
+              <div class="form-buttons">
+                <button type="submit" class="sys-btn fill-btn form-submit">Send Message</button>
+                <button type="reset" class="sys-btn outline-btn">Purge Form</button>
+              </div>
+            </form>
+            <div id="form-feedback" class="form-status-feed hidden-element"></div>
+          </div>
+
+          <!-- Direct Channels & Professional Profiles Panel -->
+          <div class="panel-column contact-info-panel">
+            
+            <h2 class="serif-title small-serif" style="margin-bottom: 24px;">Connect</h2>
+
+            <div class="contact-details-list font-mono">
+              <div class="contact-detail-item">
+                <div class="contact-detail-row">
+                  <div class="contact-detail-text">
+                    <span class="contact-detail-item-header">EMAIL</span>
+                    <a href="mailto:hemashreejelli0@gmail.com" class="contact-detail-item-value">hemashreejelli0@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-row">
+                  <div class="contact-detail-text">
+                    <span class="contact-detail-item-header">GITHUB</span>
+                    <a href="https://github.com/HemashreeJelli" target="_blank" class="contact-detail-item-value">github.com/HemashreeJelli</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-row">
+                  <div class="contact-detail-text">
+                    <span class="contact-detail-item-header">LINKEDIN</span>
+                    <a href="https://linkedin.com/in/hemashree-jelli" target="_blank" class="contact-detail-item-value">linkedin.com/in/hemashree-jelli</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-row">
+                  <div class="contact-detail-text">
+                    <span class="contact-detail-item-header">RESUME</span>
+                    <a href="https://drive.google.com/file/d/1gPJxBMHkozvuqVJUI7wclcJnBAIavO_Y/view?usp=sharing" target="_blank" class="contact-detail-item-value">hemashree-jelli-cv.pdf</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pulse status availability bar -->
+            <div class="status-indicator-bar font-mono">
+              <span class="status-dot"></span>
+              <span>CURRENT STATUS: SEEKING AI/ML AND SOFTWARE DEV ROLES</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="app.js?v=58.0"></script>
+</body>
+</html>
